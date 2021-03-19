@@ -13,7 +13,7 @@ public class Main {
         Vehicle vehicle1 = vehicleJSONreader.readVehicleFromFile("plane.json");
         Vehicle vehicle2 = vehicleJSONreader.readVehicleFromFile("ship.json");
 
-        Car car = (Car)vehicleJSONreader.readVehicleFromFile("car.json");
+        Car car = (Car) vehicleJSONreader.readVehicleFromFile("car.json");
         RailedVehicle metro = (RailedVehicle) vehicleJSONreader.readVehicleFromFile("metro.json");
 
         System.out.println(car);
