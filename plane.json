@@ -1,0 +1,8 @@
+{
+  "vehicleType": "plane",
+  "planeType": "jet",
+  "model": "Boeing 737",
+  "engine": "jet",
+  "powerHP": 30000,
+  "numberOfEngines" : 4
+}

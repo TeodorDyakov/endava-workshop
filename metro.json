@@ -1,0 +1,8 @@
+{
+  "vehicleType": "railed",
+  "railedVehicleType": "metro",
+  "model": "Metro 2030",
+  "engine": "electric",
+  "powerHP": 2000,
+  "railSize" : 1080
+}

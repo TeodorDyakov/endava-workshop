@@ -1,0 +1,8 @@
+{
+  "vehicleType": "car",
+  "carType": "hatchback",
+  "model": "Golf 6",
+  "engine": "ICE",
+  "powerHP": 200,
+  "topSpeed": 240
+}

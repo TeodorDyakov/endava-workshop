@@ -1,0 +1,8 @@
+{
+  "vehicleType": "ship",
+  "shipType": "cargo",
+  "model": "Big Ship 9000",
+  "engine": "ICE",
+  "powerHP": 30000,
+  "cargoVolume" : 1000
+}
