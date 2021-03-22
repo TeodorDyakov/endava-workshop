@@ -4,5 +4,6 @@
   "model": "Boeing 737",
   "engine": "jet",
   "powerHP": 30000,
-  "numberOfEngines": 4
+  "numberOfEngines": 4,
+  "registrationNumber" : "ББ6666ББ"
 }

@@ -1,14 +1,19 @@
 package com.endava.domainModel;
 
-public abstract class Vehicle {
-    Engine engine;
-    String model;
-    int powerHP;
+import java.util.Objects;
 
-    public Vehicle(Engine engine, String model, int powerHP) {
+public abstract class Vehicle {
+
+    protected Engine engine;
+    protected String model;
+    protected int powerHP;
+    protected String registrationNumber;
+
+    public Vehicle(Engine engine, String model, int powerHP, String registrationNumber) {
         this.engine = engine;
         this.model = model;
         this.powerHP = powerHP;
+        this.registrationNumber = registrationNumber;
     }
 
     public Engine getEngine() {
@@ -24,12 +29,15 @@ public abstract class Vehicle {
     }
 
     @Override
-    public String toString() {
-        return "Vehicle{" +
-            "engine=" + engine +
-            ", model='" + model + '\'' +
-            ", powerHP=" + powerHP +
-            '}';
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Vehicle vehicle = (Vehicle) o;
+        return registrationNumber.equals(vehicle.registrationNumber);
     }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(registrationNumber);
+    }
 }

@@ -4,8 +4,12 @@ import com.endava.domainModel.Car;
 import com.endava.domainModel.RailedVehicle;
 import com.endava.domainModel.Vehicle;
 import com.endava.io.VehicleJSONreader;
+import com.endava.parking.AirplaneParking;
+
+import java.math.BigDecimal;
 
 public class Main {
+
     public static void main(String[] args) {
 
         var vehicleJSONreader = new VehicleJSONreader();
@@ -21,5 +25,8 @@ public class Main {
 
         System.out.println(vehicle1);
         System.out.println(vehicle2);
+        AirplaneParking parking = new AirplaneParking(2, new PaymentProcessor(), new BigDecimal(10));
+        boolean carEntered = parking.enterVehicle(car);
+        System.out.println(carEntered);
     }
 }

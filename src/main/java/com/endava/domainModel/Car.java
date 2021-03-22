@@ -5,8 +5,8 @@ public class Car extends Vehicle {
     private CarType type;
     private int topSpeed;
 
-    public Car(Engine engine, String model, int powerHP, CarType type, int topSpeed) {
-        super(engine, model, powerHP);
+    public Car(Engine engine, String model, int powerHP, CarType type, int topSpeed, String registrationNumber) {
+        super(engine, model, powerHP, registrationNumber);
         this.type = type;
         this.topSpeed = topSpeed;
     }
@@ -27,6 +27,7 @@ public class Car extends Vehicle {
             ", engine=" + engine +
             ", model='" + model + '\'' +
             ", powerHP=" + powerHP +
+            ", registrationNumber='" + registrationNumber + '\'' +
             '}';
     }
 }

@@ -4,5 +4,6 @@
   "model": "Big Ship 9000",
   "engine": "ICE",
   "powerHP": 30000,
-  "cargoVolume": 1000
+  "cargoVolume": 1000,
+  "registrationNumber" : "ГФ368903469"
 }

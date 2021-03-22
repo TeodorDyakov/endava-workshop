@@ -4,5 +4,6 @@
   "model": "Golf 6",
   "engine": "ICE",
   "powerHP": 200,
-  "topSpeed": 240
+  "topSpeed": 240,
+  "registrationNumber" : "СА6486ПХ"
 }

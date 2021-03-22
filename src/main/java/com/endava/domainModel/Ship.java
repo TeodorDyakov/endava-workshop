@@ -5,8 +5,8 @@ public class Ship extends Vehicle {
     private ShipType type;
     private int cargoVolume;
 
-    public Ship(Engine engine, String model, int powerHP, ShipType type, int cargoVolume) {
-        super(engine, model, powerHP);
+    public Ship(Engine engine, String model, int powerHP, ShipType type, int cargoVolume, String registrationNumber) {
+        super(engine, model, powerHP, registrationNumber);
         this.type = type;
         this.cargoVolume = cargoVolume;
     }
@@ -27,6 +27,7 @@ public class Ship extends Vehicle {
             ", engine=" + engine +
             ", model='" + model + '\'' +
             ", powerHP=" + powerHP +
+            ", registrationNumber='" + registrationNumber + '\'' +
             '}';
     }
 }

@@ -4,5 +4,6 @@
   "model": "Metro 2030",
   "engine": "electric",
   "powerHP": 2000,
-  "railSize": 1080
+  "railSize": 1080,
+  "registrationNumber" : "СА1234АБ"
 }
