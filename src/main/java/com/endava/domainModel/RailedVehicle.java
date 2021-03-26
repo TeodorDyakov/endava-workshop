@@ -1,8 +1,8 @@
 package com.endava.domainModel;
 
 public class RailedVehicle extends Vehicle {
-    RailedVehicleType type;
-    int railSizeMM;
+    private RailedVehicleType type;
+    private int railSizeMM;
 
     public RailedVehicle(Engine engine, String model, int powerHP, RailedVehicleType type, int railSizeMM,
                          String registrationNumber) {
@@ -13,6 +13,10 @@ public class RailedVehicle extends Vehicle {
 
     public RailedVehicleType getType() {
         return type;
+    }
+
+    public int getRailSizeMM() {
+        return railSizeMM;
     }
 
     @Override
