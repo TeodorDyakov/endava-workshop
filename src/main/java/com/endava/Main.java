@@ -25,8 +25,21 @@ public class Main {
 
         System.out.println(vehicle1);
         System.out.println(vehicle2);
+
         AirplaneParking parking = new AirplaneParking(2, new PaymentProcessor(), new BigDecimal(10));
         boolean carEntered = parking.enterVehicle(car);
-        System.out.println(carEntered);
+        if(carEntered){
+            System.out.println("car entered parking");
+        }
+
+        CarRepository carRepository = new CarRepository();
+        boolean saved = carRepository.saveCar(car);
+
+        if(saved){
+            System.out.println("the car object was written to database");
+        }
     }
 }
+
+
+//    INSERT INTO `cars` (`type`, `model`, `engine`, `powerHP`, `topSpeed`, `regitstrationNumber`) VALUES ('HATCHBACK', 'GOlf 6', 'INTERNAL_COMBUSTION', '80', '200', 'СА5678ПО');

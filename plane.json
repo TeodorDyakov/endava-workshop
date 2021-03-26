@@ -1,9 +1,9 @@
 {
-  "vehicleType": "plane",
-  "planeType": "jet",
+  "vehicleType": "PLANE",
+  "type": "JET",
   "model": "Boeing 737",
-  "engine": "jet",
+  "engine": "JET",
   "powerHP": 30000,
   "numberOfEngines": 4,
-  "registrationNumber" : "ББ6666ББ"
+  "registrationNumber": "ББ6666ББ"
 }

@@ -1,9 +1,9 @@
 {
-  "vehicleType": "car",
-  "carType": "hatchback",
-  "model": "Golf 6",
-  "engine": "ICE",
-  "powerHP": 200,
-  "topSpeed": 240,
-  "registrationNumber" : "СА6486ПХ"
+  "vehicleType": "CAR",
+  "type": "HATCHBACK",
+  "model": "Trabant",
+  "engine": "INTERNAL_COMBUSTION",
+  "powerHP": 2000,
+  "topSpeed": 430,
+  "registrationNumber": "99999999"
 }

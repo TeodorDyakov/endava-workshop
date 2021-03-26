@@ -1,9 +1,9 @@
 {
-  "vehicleType": "ship",
-  "shipType": "cargo",
+  "vehicleType": "SHIP",
+  "type": "CARGO",
   "model": "Big Ship 9000",
-  "engine": "ICE",
+  "engine": "INTERNAL_COMBUSTION",
   "powerHP": 30000,
   "cargoVolume": 1000,
-  "registrationNumber" : "ГФ368903469"
+  "registrationNumber": "ГФ368903469"
 }

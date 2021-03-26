@@ -5,7 +5,8 @@ public class Plane extends Vehicle {
     private PlaneType type;
     private int numberOfEngines;
 
-    public Plane(Engine engine, String model, int powerHP, PlaneType type, int numberOfEngines, String registrationNumber) {
+    public Plane(Engine engine, String model, int powerHP, PlaneType type, int numberOfEngines,
+                 String registrationNumber) {
         super(engine, model, powerHP, registrationNumber);
         this.numberOfEngines = numberOfEngines;
         this.type = type;

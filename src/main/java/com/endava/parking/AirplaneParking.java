@@ -21,15 +21,15 @@ public class AirplaneParking {
     //injected through constructor
     private PaymentProcessor paymentProcessor;
 
-    public AirplaneParking(int capacity, PaymentProcessor paymentProcessor, BigDecimal PRICE_PER_MINUTE){
+    public AirplaneParking(int capacity, PaymentProcessor paymentProcessor, BigDecimal PRICE_PER_MINUTE) {
         this.CAPACITY = capacity;
         IntStream.range(0, capacity).forEach(i -> freeSpots.add(i));
         this.PRICE_PER_MINUTE = PRICE_PER_MINUTE;
         this.paymentProcessor = paymentProcessor;
     }
 
-    public boolean enterVehicle(Vehicle v){
-        if(getNumberOfFreeSpots() > 0){
+    public boolean enterVehicle(Vehicle v) {
+        if (getNumberOfFreeSpots() > 0) {
             Random rng = new Random();
             int spot = rng.nextInt(freeSpots.size());
             freeSpots.remove(spot);
@@ -39,15 +39,16 @@ public class AirplaneParking {
         return false;
     }
 
-    public BigDecimal getPriceToPay(ParkingTicket ticket){
+    public BigDecimal getPriceToPay(ParkingTicket ticket) {
         long durationMinutes = ChronoUnit.MINUTES.between(ticket.getIssueTime(), LocalDateTime.now());
         return PRICE_PER_MINUTE.multiply(new BigDecimal(durationMinutes));
     }
-    public boolean exitVehicle(Vehicle v){
+
+    public boolean exitVehicle(Vehicle v) {
         ParkingTicket ticket = parkedVehicles.get(v);
         BigDecimal priceToPay = getPriceToPay(ticket);
 
-        if(paymentProcessor.payPrice(priceToPay)){
+        if (paymentProcessor.payPrice(priceToPay)) {
             parkedVehicles.remove(v);
             freeSpots.add(ticket.getSpotNumber());
             return true;
@@ -56,7 +57,7 @@ public class AirplaneParking {
         return false;
     }
 
-    public int getNumberOfFreeSpots(){
+    public int getNumberOfFreeSpots() {
         return freeSpots.size();
     }
 }

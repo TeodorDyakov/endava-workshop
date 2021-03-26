@@ -9,17 +9,17 @@ import org.junit.Before;
 
 import java.math.BigDecimal;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class AirplaneParkingTest {
 
+    static final int CAPACITY = 2;
+    static final BigDecimal pricePerMinute = new BigDecimal(5);
     static VehicleJSONreader vehicleJSONreader;
     static Vehicle vehicle1;
     static Vehicle vehicle2;
     static Vehicle car;
     static Vehicle metro;
-    static final int CAPACITY = 2;
-    static final BigDecimal pricePerMinute = new BigDecimal(5);
     static PaymentProcessor paymentProcessor = new PaymentProcessor();
     static AirplaneParking parking;
 

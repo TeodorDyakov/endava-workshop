@@ -28,6 +28,10 @@ public abstract class Vehicle {
         return powerHP;
     }
 
+    public String getRegistrationNumber() {
+        return registrationNumber;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

@@ -1,9 +1,9 @@
 {
-  "vehicleType": "railed",
-  "railedVehicleType": "metro",
+  "vehicleType": "RAILED",
+  "type": "METRO",
   "model": "Metro 2030",
-  "engine": "electric",
+  "engine": "ELECTRIC",
   "powerHP": 2000,
-  "railSize": 1080,
-  "registrationNumber" : "СА1234АБ"
+  "railSizeMM": 1080,
+  "registrationNumber": "СА1234АБ"
 }
